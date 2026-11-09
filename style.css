@@ -71,3 +71,54 @@ nav a:hover {
     height: 42px;
   }
 }
+
+#hero {
+  background-image: url("./assets/images/hero-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 450px;
+}
+
+#hero {
+  /* Existing properties alane unchali */
+  display: flex;
+  align-items: center;
+  padding: 40px 60px;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1)),
+    url("./assets/images/hero-background.png");
+}
+
+#hero h2 {
+  color: #f9f5ee;
+  font-size: 48px;
+  margin: 0 0 15px;
+}
+
+#hero p {
+  color: #f3dfba;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    padding: 30px 20px;
+    min-height: 350px;
+    background-position: 65% center;
+  }
+
+  #hero h2 {
+    font-size: 32px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+}
