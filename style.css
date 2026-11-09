@@ -224,3 +224,67 @@ nav a:hover {
     height: 100px;
   }
 }
+
+/* About section */
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #f3dfba;
+  padding: 60px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  color: #3e1314;
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+.about-content p {
+  color: #7a6b63;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Mobile responsive styles */
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    height: 250px;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+}
